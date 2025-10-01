@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2025 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2025 session called **DT160 - Extend Joule with custom skills and custom agents for SAP Cloud ERP**.
 
 ## Overview
 
@@ -23,6 +23,11 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 - [Exercise 2 - Second Exercise Description](exercises/ex2/)
     - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
+
+## Flow
+
+1. S/4 Flow -make show sales order / make yourself familiar with oyur envirobement
+1.
 
   
 **OR** Link to the Tutorial Navigator for example...

@@ -1,11 +1,16 @@
-# Level 1 Heading
+# Getting Started 
+Level 1 Heading
 
-In this exercise, you will...
+In this exercise, you will make yourself familiar
+
+understand the rederence architecure
+[Extend Joule with Joule Studio - Reference Architecture](https://architecture.learning.sap.com/docs/ref-arch/06ff6062dc)
+[Identity Management for Joule  - Reference Architecture](https://architecture.learning.sap.com/docs/ref-arch/20c6b29b1e/4)
+
 
 ## Level 2 Heading
 
-After completing these steps you will have....
-
+After completing these module you are familar with the provided system and landscape setup.
 1.	Click here.
 <br>![](/exercises/ex0/images/00_00_0010.png)
 
