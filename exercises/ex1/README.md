@@ -1,8 +1,8 @@
-# Exercise 1 - Exercise 1 Description
+# Exercise 1 - Create a skill to review and change custom fields in a sales order
 
-In this exercise, we will create...
+In this exercise, you will learn how to work with Joule Studio to create custom Joule skills for reviewing and editing custom fields in a S/4HANA sales order. To achieve this, we are creating an environment, and action project and finally a Joule skill inside of a project. 
 
-## Exercise 1.1 Sub Exercise 1 Description
+## Exercise 1.1 Access the Build Lobby and create a new environment
 
 After completing these steps you will have created...
 
@@ -16,24 +16,13 @@ response->set_text( |Hello World! | ).
 
 
 
-## Exercise 1.2 Sub Exercise 2 Description
+## Exercise 1.2 Create the action
 
-After completing these steps you will have...
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
 
-```
+## Exercise 1.3 Create the Joule Skills
 
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
+
 
 
 ## Summary
