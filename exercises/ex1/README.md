@@ -22,15 +22,24 @@ After completing these steps you will have created an environment to isolate the
 <br>![](/exercises/ex1/images/ex1.1-5.png)
 
 
+## Exercise 1.2 Create the custom Joule Skills
 
-## Exercise 1.2 Create the action
+After completing these steps, you have created two custom Joule Skills for retrieving and writing custom fields of a S/4HANA Sales Order.
 
+1. Click on the 'Control Tower'.
+<br>![](/exercises/ex1/images/ex1.1-1.png)
 
+2. Click on 'Environments'.
+<br>![](/exercises/ex1/images/ex1.1-2.png)
 
-## Exercise 1.3 Create the Joule Skills
+3. Create a new environment.
+<br>![](/exercises/ex1/images/ex1.1-3.png)
 
+4. Create a new environment with the naming convention 'env_XXX'.
+<br>![](/exercises/ex1/images/ex1.1-4.png)
 
-
+5. Make sure that everything is correct by clicking on the environment and then the 'Share' button.
+<br>![](/exercises/ex1/images/ex1.1-5.png)
 
 ## Summary
 
