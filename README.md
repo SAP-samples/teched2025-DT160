@@ -1,8 +1,9 @@
-# Session ID - Session Title
+# DT160 - Extend Joule with custom skills and custom agents for SAP Cloud ERP
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2025 session called **DT160 - Extend Joule with custom skills and custom agents for SAP Cloud ERP**.
+Get maximum value from the Joule copilot in SAP Cloud ERP by extending it with custom-built skills and intelligent agents that can plan, act, and execute tasks. Explore tools and techniques to make Joule smarter and faster while enhancing user productivity or automating complex workflows.
+
 
 ## Overview
 
