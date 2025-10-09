@@ -1,9 +1,15 @@
-# Getting Started 
-Level 1 Heading
+# Getting Started
 
 In this exercise, you will make yourself familiar
 
-understand the rederence architecure
+### Landscape / System Access
+
+### SAP Cloud ERP System
+[SAP Cloud ERP System](https://my426786.s4hana.cloud.sap/ui)
+
+### Joule Studio in SAP Build
+
+Refer
 [Extend Joule with Joule Studio - Reference Architecture](https://architecture.learning.sap.com/docs/ref-arch/06ff6062dc)
 [Identity Management for Joule  - Reference Architecture](https://architecture.learning.sap.com/docs/ref-arch/20c6b29b1e/4)
 
