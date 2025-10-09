@@ -4,9 +4,9 @@ In this exercise, you will learn how to work with Joule Studio to create custom 
 
 ## Exercise 1.1 Access the Build Lobby and create a new environment
 
-After completing these steps you will have created...
+After completing these steps you will have created an environment to isolate the skill development process for your specific user.
 
-1. Click here.
+1. Click on the 'Control Tower'.
 <br>![](/exercises/ex1/images/01_01_0010.png)
 
 2.	Insert this line of code.
