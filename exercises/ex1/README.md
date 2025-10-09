@@ -7,12 +7,19 @@ In this exercise, you will learn how to work with Joule Studio to create custom 
 After completing these steps you will have created an environment to isolate the skill development process for your specific user.
 
 1. Click on the 'Control Tower'.
-<br>![](/exercises/ex1/images/01_01_0010.png)
+<br>![](/exercises/ex1/images/ex1.1-1.png)
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello World! | ). 
-```
+2. Click on 'Environments'.
+<br>![](/exercises/ex1/images/ex1.1-2.png)
+
+3. Create a new environment.
+<br>![](/exercises/ex1/images/ex1.1-3.png)
+
+4. Create a new environment with the naming convention 'env_XXX'.
+<br>![](/exercises/ex1/images/ex1.1-4.png)
+
+5. Make sure that everything is correct by clicking on the environment and then the 'Share' button.
+<br>![](/exercises/ex1/images/ex1.1-5.png)
 
 
 
