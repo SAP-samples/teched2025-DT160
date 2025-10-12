@@ -171,15 +171,24 @@ Once the Skill has been created, we can release and deploy the project. Then, th
 11. The skills are working as expected.
 <br>![](/exercises/ex1/images/ex1.3-11.png)
 
-12. Go back to your environment and click on the settings button on the right side.
+12. Go back to your environment and click on the 'Share' button.
+<br>![](/exercises/ex1/images/ex1.3-14.png)
+
+13. Before sharing the Skill with our S4 Joule instance, we want to make sure that only our user has access to the Skill in order not interfere with the skills of the other participants. Click on 'Cancel' to go back to your environment.
+<br>![](/exercises/ex1/images/ex1.3-15.png)
+
+14. Now click on the settings button on the right side.
 <br>![](/exercises/ex1/images/ex1.3-12.png)
 
-13. Now we can turn on 'Share Environment Capabilities' to deploy the Skill into our S/4HANA Joule instance.
+15. Turn on 'Share Environment Capabilities' to deploy the Skill into our S/4HANA Joule instance.
 <br>![](/exercises/ex1/images/ex1.3-5.png)
+
+16. Go to the S/4HANA system and test your skills there.
+<br>![](/exercises/ex1/images/ex1.3-16.png)
 
 ## Summary
 
-You've now ...
+You've now created two custom Joule Skills for reading and writing custom fields of a sales order. We will use parts of these skills in our second exercise where we will create a custom agent to do a completeness check on a sales order.
 
 Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
 
