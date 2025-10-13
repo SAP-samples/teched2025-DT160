@@ -18,7 +18,7 @@ After completing these steps you will have created an environment to isolate the
 4. Create a new environment with the naming convention 'env_XXX'.
 <br>![](/exercises/ex1/images/ex1.1-4.png)
 
-5. Make sure that everything is correct by clicking on the environment and then the 'Share' button.
+5. Make sure that only your user has access to the environment by clicking on it and then the 'Share' button.
 <br>![](/exercises/ex1/images/ex1.1-5.png)
 
 
