@@ -1,8 +1,11 @@
 # Getting Started
 
-In this exercise, you will make yourself familiar
+In this exercise, you will make yourself familiar the system landscape setup required for this Hands-on Workshop
 
 ### Landscape / System Access
+
+[**SAP Build Lobby - Joule Studio**](https://dt160-map4x9xc.eu10.build.cloud.sap/lobby)
+
 
 ### SAP Cloud ERP System
 [SAP Cloud ERP System](https://my426786.s4hana.cloud.sap/ui)
