@@ -150,7 +150,7 @@ Once the Skill has been created, we can release and deploy the project. Then, th
 4. Choose your user-specific enviromment and deploy the project into this. 
 <br>![](/exercises/ex1/images/ex1.3-4.png)
 
-5. Select the shown destination and click on 'Deploy'.
+5. Select the shown destination (for dry run choose 'S4_SalesOrder_v4') and click on 'Deploy'.
 <br>![](/exercises/ex1/images/ex1.3-5.png)
 
 6. Go back to the Build Lobby, access the Control Tower and go the 'Environments'.
