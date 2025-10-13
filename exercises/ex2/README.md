@@ -6,14 +6,20 @@ In this exercise, we will adjust our skills that we created in exercise 1 in ord
 
 After completing these steps you will have created...
 
-1. Click here.
-<br>![](/exercises/ex2/images/02_01_0010.png)
+1. Click on the 'Control Tower'.
+<br>![](/exercises/ex1/images/ex1.1-1.png)
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
+2. Click on 'Environments'.
+<br>![](/exercises/ex1/images/ex1.1-2.png)
 
+3. Create a new environment.
+<br>![](/exercises/ex1/images/ex1.1-3.png)
+
+4. Create a new environment with the naming convention 'env_XXX'.
+<br>![](/exercises/ex1/images/ex1.1-4.png)
+
+5. Make sure that only your user has access to the environment by clicking on it and then the 'Share' button.
+<br>![](/exercises/ex1/images/ex1.1-5.png)
 
 
 ## Exercise 2.2 Create the agent
