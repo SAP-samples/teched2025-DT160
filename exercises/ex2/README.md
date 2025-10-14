@@ -4,22 +4,22 @@ In this exercise, we will adjust our skills that we created in exercise 1 in ord
 
 ## Exercise 2.1 Modify the Skills
 
-After completing these steps you will have created...
+After completing these steps, we will have adjusted our skills from exercise 1 in a minimal way to make the data consumable for the agent. For example, instead of just using the custom field in the skill, we now want to have an agent that is able to analyze all of the header fields from a sales order. 
 
-1. Click on the 'Control Tower'.
-<br>![](/exercises/ex1/images/ex1.1-1.png)
+1. Let's first open the skill for retrieval of sales order fields.
+<br>![](/exercises/ex2/images/ex2.1-1.png)
 
-2. Click on 'Environments'.
-<br>![](/exercises/ex1/images/ex1.1-2.png)
+2. For our agentic use case, we need to add an additional input to our skill.
+<br>![](/exercises/ex2/images/ex2.1-2.png)
 
-3. Create a new environment.
-<br>![](/exercises/ex1/images/ex1.1-3.png)
+3. The agent needs to be able to get the business partner information from the sales order. For that, we need to set the expand parameter to '_Partner'. We don't need this all the time which is why the parameter is NOT required. 
+<br>![](/exercises/ex2/images/ex2.1-3.png)
 
-4. Create a new environment with the naming convention 'env_XXX'.
-<br>![](/exercises/ex1/images/ex1.1-4.png)
+4. Now we need to again put the expand into the relevant input parameter of our action.
+<br>![](/exercises/ex2/images/ex2.1-4.png)
 
-5. Make sure that only your user has access to the environment by clicking on it and then the 'Share' button.
-<br>![](/exercises/ex1/images/ex1.1-5.png)
+5. Close the action details and delete the 'Send Message' tile as we want to provide all the sales order information to the agent instead of a predefined message.
+<br>![](/exercises/ex2/images/ex2.1-5.png)
 
 
 ## Exercise 2.2 Create the agent
