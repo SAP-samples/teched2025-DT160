@@ -144,13 +144,13 @@ In this step, we will release and deploy the agent into our user-specific enviro
 <br>![](/exercises/ex2/images/ex2.2-5.png)
 
 6. Open the Build Lobby again and go to the 'Control Tower' to open the 'Environments'.
-<br>![](/exercises/ex2/images/ex2.2-6.png)
+<br>![](/exercises/ex2/images/ex2.3-6.png)
 
 7. Open the user-specific environment.
-<br>![](/exercises/ex2/images/ex2.2-7.png)
+<br>![](/exercises/ex2/images/ex2.3-7.png)
 
 8. Go to the 'Joule' section of the environment and open Joule Standalone by clicking on 'Launch'.
-<br>![](/exercises/ex2/images/ex2.2-8.png)
+<br>![](/exercises/ex2/images/ex2.3-8.png)
 
 ## Summary
 
