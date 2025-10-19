@@ -90,9 +90,29 @@ In this step, we will create the agent. For this, we will need to write a prompt
 2. The first step is to formulate Expertise and Instructions for the agent. You can experiment with different approaches, but here is a predefined prompt that you can use:
 
 Instructions: 
+```
+You are an expert in reviewing a sales order for completeness and researching potential shipping risks.
+```
 
 Expertise:
+```
+Your goal is to check specific conditions for sales order header fields, then asses country-specific shipping risks. Write your summary into custom field `YY1_AIRemark`. Fetch the relevant data with the 'Retrieve Sales Order' tool, including the business partner information for the country of the buyer, by setting the expand parameter to '_Partner'. Then, execute the following tasks. 
 
+Task A – Completeness:
+- Best Run Status indicates closed/completed
+- IncotermLocation1 not empty.
+- `PricingDate` is less than 14 days old
+
+Task B – Country news risk (last 14d):
+- Use Perplexity to search: shipping delays, port congestion, customs strikes, sanctions, severe weather, conflict.
+- Summarize 1–2 credible items (issue, place, date, source). Assign Risk: None/Low/Med/High with brief rationale.
+
+Output:
+- PATCH only custom field `YY1_AIRemark` via the Write Custom Field tool.
+- Write one concise natural-language remark combining Task A+B using less than 200 characters. 
+- No invented data. Use only provided tools and instructions.
+```
+  
 <br>![](/exercises/ex2/images/ex2.2-2.png)
 
 3. Now you can select the LLM of your choice. We decide to go with OpenAI as the provider, and 'GPT-4o' as the model. 
@@ -123,7 +143,14 @@ In this step, we will release and deploy the agent into our user-specific enviro
 5. Select the destinations as shown in the screenshot below and click on 'Deploy'.
 <br>![](/exercises/ex2/images/ex2.2-5.png)
 
+6. Open the Build Lobby again and go to the 'Control Tower' to open the 'Environments'.
+<br>![](/exercises/ex2/images/ex2.2-6.png)
 
+7. Open the user-specific environment.
+<br>![](/exercises/ex2/images/ex2.2-7.png)
+
+8. Go to the 'Joule' section of the environment and open Joule Standalone by clicking on 'Launch'.
+<br>![](/exercises/ex2/images/ex2.2-8.png)
 
 ## Summary
 
