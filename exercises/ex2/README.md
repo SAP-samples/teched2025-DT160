@@ -1,8 +1,13 @@
 # Exercise 2 - Exercise 2 Description
 
-In this exercise, we will adjust our skills that we created in exercise 1 in order to build a custom Sales Order Completeness Agent. Our goal is to retrieve the sales order information and apply specific checks on some of the fields. On top of that, the agent will gather information about the country of our business partner and then apply a web search to look for the latest news surrounding this country. The summary of the completeness check from our agent will be saved into the custom field 'AI Remark' of the sales order.
+In this exercise, we will first adjust our skills that we created in exercise 1 in order to build a custom Sales Order Completeness Agent. On top of that, the agent should be able to research potential shipping risks by performing a web search with our Perplexiy API. We want to explicitly check for the following conditions in our sales order:
+- Best Run Status should be set to completed
+- IncotermLocation1 should not be empty
+- The pricing date should not be older tahn 14 days.
 
-## Exercise 2.1 Modify the Skills
+In the end, the summary of our agent analyis will be saved into the custom field 'AI Remark' of the sales order.
+
+## Exercise 2.1 Modify the Skills and create a new one
 
 After completing these steps, we will have adjusted our skills from exercise 1 in a minimal way to make the data consumable for the agent. For example, instead of just using the custom field in the skill, we now want to have an agent that is able to analyze all of the header fields from a sales order. 
 
@@ -18,30 +23,107 @@ After completing these steps, we will have adjusted our skills from exercise 1 i
 4. Now we need to again put the expand into the relevant input parameter of our action.
 <br>![](/exercises/ex2/images/ex2.1-4.png)
 
-5. Close the action details and delete the 'Send Message' tile as we want to provide all the sales order information to the agent instead of a predefined message.
+5. Close the action details and delete the 'Send Message' tile as we want to provide all the sales order information to the agent instead of only selected header fields.
 <br>![](/exercises/ex2/images/ex2.1-5.png)
 
+6. Turn off the Joule-generated response to return all the fields from the API call.
+<br>![](/exercises/ex2/images/ex2.1-6.png)
+
+7. Let's change the 'Write Custom Field" skill to write into our second custom field. Open the trigger, go to 'Parameters and click on 'Configure'.
+<br>![](/exercises/ex2/images/ex2.1-7.png)
+
+8. Change the Best Run Status to 'AI Remark Query' and apply the changes.
+<br>![](/exercises/ex2/images/ex2.1-8.png)
+
+9. Now go to the action and click on the 'AI Remark Query' as the input for the parameter 'YY_AI_Remark_SDH'.
+<br>![](/exercises/ex2/images/ex2.1-9.png)
+
+10. The next step is to click on the 'Send Message' tile and open the message editor to adapt the custom message.
+<br>![](/exercises/ex2/images/ex2.1-10.png)
+
+11. Adapt the custom message to tell Joule that the custom field has been successfully written. This time, select the context of the Start Event instead of the API response.
+<br>![](/exercises/ex2/images/ex2.1-11.png)
+
+12. The next step is to create a new Skill for our Perplexity API. Go to the 'Overview' section of our project, click on 'Create' and then 'Create Joule Skill'.
+<br>![](/exercises/ex2/images/ex2.1-12.png)
+
+13. Write below description into the Skill.
+<br>![](/exercises/ex2/images/ex2.1-13.png)
+
+14. Let's first change the Skill Input Parameter in the 'Trigger' tile. Click on 'Configure'.
+<br>![](/exercises/ex2/images/ex2.1-14.png)
+
+15. We call the input parameter 'query', because we want the agent to formulate the relevant search query from the context. Click on 'Apply' to go back the Trigger Parameters.
+<br>![](/exercises/ex2/images/ex2.1-15.png)
+
+16. In the Skill Outputs section, we define the response from the LLM as the output parameter. Click on 'Apply' to save the changes.
+<br>![](/exercises/ex2/images/ex2.1-16.png)
+
+17. Back in our skill, we need to add a new tile by clicking on the '+' button. Then, select 'Call Action'.
+<br>![](/exercises/ex2/images/ex2.1-17.png)
+
+18. If the action is not shown in the list, click on 'Browse All Actions'.
+<br>![](/exercises/ex2/images/ex2.1-18.png)
+
+19. Select the POST action with the name 'Create chat completion'.
+<br>![](/exercises/ex2/images/ex2.1-19.png)
+
+20. We need to create new environment variable, because we are now using a different destination. 
+<br>![](/exercises/ex2/images/ex2.1-20.png)
+
+21. Give the variable a descriptive name, we call it 'perplexity' and click on "Create'.
+<br>![](/exercises/ex2/images/ex2.1-21.png)
+
+22. In the Action Input, we need to pass our query from the Skill Input to the messages of our API call. Navigate to the 'content' parameter and select the 'query' from the Skill Input.
+<br>![](/exercises/ex2/images/ex2.1-22.png)
+
+23. Now go to the end node of the Skill and select the 'content' parameter from the API response. This is needed for Joule to access the result of the web search.
+<br>![](/exercises/ex2/images/ex2.1-23.png)
 
 ## Exercise 2.2 Create the agent
 
-After completing these steps you will have...
+In this step, we will create the agent. For this, we will need to write a prompt, choose a LLM and select the right tools for the agent.
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
+1. In the overview section of our project, click on 'Create' and then 'Create Agent'. Give the agent a name and a description as shown below.
+<br>![](/exercises/ex2/images/ex2.2-1.png)
 
-```
+2. The first step is to formulate Expertise and Instructions for the agent. You can experiment with different approaches, but here is a predefined prompt that you can use:
 
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+Instructions: 
 
-## Exercise 2.3 Deploy and the test the custom agent
+Expertise:
+
+<br>![](/exercises/ex2/images/ex2.2-2.png)
+
+3. Now you can select the LLM of your choice. We decide to go with OpenAI as the provider, and 'GPT-4o' as the model. 
+<br>![](/exercises/ex2/images/ex2.2-3.png)
+
+4. We can enable additional pre- and post-processing steps for our agent. This will add task decomposition and output refinement as nodes for the agent reasoning. After that, we can click on the 'Add Tool' button on the right side of the screen to input our tools.
+<br>![](/exercises/ex2/images/ex2.2-4.png)
+
+5. Since we now have 3 skills in our project, we can enable these skills as tools for our agent. Finally, click on the 'Add' button to finish this part of the exercise.
+<br>![](/exercises/ex2/images/ex2.2-5.png)
+
+## Exercise 2.3 Deploy and test the Agent
+
+In this step, we will release and deploy the agent into our user-specific environment. There, will be first testing the agent in the standalone joule instance before showing the results in our S/4HANA system.
+
+1. Click on the 'Release' button on the top right of the screen.
+<br>![](/exercises/ex2/images/ex2.2-1.png)
+
+2. Click on 'Release'. 
+<br>![](/exercises/ex2/images/ex2.2-2.png)
+
+3. Go to the released version of your project and click on the 'Deploy' button on the top right of the screen.
+<br>![](/exercises/ex2/images/ex2.2-3.png)
+
+4. Deploy the project into the user specific environment and click on 'Upgrade'.
+<br>![](/exercises/ex2/images/ex2.2-4.png)
+
+5. Select the destinations as shown in the screenshot below and click on 'Deploy'.
+<br>![](/exercises/ex2/images/ex2.2-5.png)
+
+
 
 ## Summary
 
