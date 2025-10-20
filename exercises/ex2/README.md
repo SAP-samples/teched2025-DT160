@@ -128,14 +128,14 @@ Output:
 
 In this step, we will release and deploy the agent into our user-specific environment. There, will be first testing the agent in the standalone joule instance before showing the results in our S/4HANA system.
 
-1. Make sure that you are in the released version of the project by checking the version next to the project name on the top of the screen. Click on the 'Release' button on the right side.
+1. Click on the 'Release' button on the top right of the screen.
 <br>![](/exercises/ex2/images/ex2.2-1.png)
 
 2. Click on 'Release'. 
 <br>![](/exercises/ex2/images/ex2.2-2.png)
 
-3. Go to the released version of your project and click on the 'Deploy' button on the top right of the screen.
-<br>![](/exercises/ex2/images/ex2.2-3.png)
+3. Make sure that you are in the released version of your project (next to the project name on the top of the screen) and click on the 'Deploy' button on the top right of the screen.
+<br>![](/exercises/ex2/images/ex2.2-3_neu.png)
 
 4. Deploy the project into the user specific environment and click on 'Upgrade'.
 <br>![](/exercises/ex2/images/ex2.2-4.png)
@@ -154,6 +154,6 @@ In this step, we will release and deploy the agent into our user-specific enviro
 
 ## Summary
 
-You've now ...
+You've now modified the already existing skills and created a new one for the Perplexity integration. In exercise 2, you created a new agent by formulating instructions and adding tools. Finally, the project was released and tested by the user.
 
 Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
