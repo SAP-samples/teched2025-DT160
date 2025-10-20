@@ -183,8 +183,8 @@ Once the Skill has been created, we can release and deploy the project. Then, th
 15. Turn on 'Share Environment Capabilities' to deploy the Skill into our S/4HANA Joule instance.
 <br>![](/exercises/ex1/images/ex1.3-5.png)
 
-16. Go to the S/4HANA system and test your skills there.
-<br>![](/exercises/ex1/images/ex1.3-16.png)
+16. Go to the S/4HANA system, open the Joule chat window by clicking on the Joule icon on the top of the screen and start testing your skills.
+<br>![](/exercises/ex1/images/ex1.3-16_neu.png)
 
 ## Summary
 
