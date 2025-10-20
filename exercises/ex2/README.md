@@ -17,8 +17,8 @@ After completing these steps, we will have adjusted our skills from exercise 1 i
 2. For our agentic use case, we need to add an additional input to our skill.
 <br>![](/exercises/ex2/images/ex2.1-2.png)
 
-3. The agent needs to be able to get the business partner information from the sales order. For that, we need to set the expand parameter to '_Partner'. We don't need this all the time which is why the parameter is NOT required. 
-<br>![](/exercises/ex2/images/ex2.1-3.png)
+3. The agent needs to be able to read the country of the business partner from the sales order. For that, we need to add the expand parameter as a Skill Input. 
+<br>![](/exercises/ex2/images/ex2.1-3_neu.png)
 
 4. Now we need to again put the expand into the relevant input parameter of our action.
 <br>![](/exercises/ex2/images/ex2.1-4.png)
@@ -29,8 +29,8 @@ After completing these steps, we will have adjusted our skills from exercise 1 i
 6. Turn off the Joule-generated response to return all the fields from the API call.
 <br>![](/exercises/ex2/images/ex2.1-6.png)
 
-7. Let's change the 'Write Custom Field" skill to write into our second custom field. Open the trigger, go to 'Parameters and click on 'Configure'.
-<br>![](/exercises/ex2/images/ex2.1-7.png)
+7. Open the 'Write Custom Field' skill. This time we want to write into our other custom sales order field. Open the trigger, go to 'Parameters' and click on 'Configure'.
+<br>![](/exercises/ex2/images/ex2.1-7_neu.png)
 
 8. Change the Best Run Status to 'AI Remark Query' and apply the changes.
 <br>![](/exercises/ex2/images/ex2.1-8.png)
@@ -41,8 +41,8 @@ After completing these steps, we will have adjusted our skills from exercise 1 i
 10. The next step is to click on the 'Send Message' tile and open the message editor to adapt the custom message.
 <br>![](/exercises/ex2/images/ex2.1-10.png)
 
-11. Adapt the custom message to tell Joule that the custom field has been successfully written. This time, select the context of the Start Event instead of the API response.
-<br>![](/exercises/ex2/images/ex2.1-11.png)
+11. Adapt the custom message to tell Joule that the custom field has been successfully written. This time, select the context from the Start Event instead of the API response.
+<br>![](/exercises/ex2/images/ex2.1-11_neu.png)
 
 12. The next step is to create a new Skill for our Perplexity API. Go to the 'Overview' section of our project, click on 'Create' and then 'Create Joule Skill'.
 <br>![](/exercises/ex2/images/ex2.1-12.png)
@@ -128,7 +128,7 @@ Output:
 
 In this step, we will release and deploy the agent into our user-specific environment. There, will be first testing the agent in the standalone joule instance before showing the results in our S/4HANA system.
 
-1. Click on the 'Release' button on the top right of the screen.
+1. Make sure that you are in the released version of the project by checking the version next to the project name on the top of the screen. Click on the 'Release' button on the right side.
 <br>![](/exercises/ex2/images/ex2.2-1.png)
 
 2. Click on 'Release'. 
