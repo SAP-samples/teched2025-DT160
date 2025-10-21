@@ -89,7 +89,7 @@ After completing these steps, you have created two custom Joule Skills for retri
 21. In the message editor, you can configure any kind of predefined message structure. Here, we are defining an illustrated message and add the Sales Order Number into the title by accessing the context of the Skill with the '<>' button.
 <br>![](/exercises/ex1/images/ex1.2-21.png)
 
-22. Additionally, we want to add an Action Button to navigate the user into the respective Sales Order. We are using the URL for changing sales orders (https://my426786.s4hana.cloud.sap/ui#SalesOrder-change?SalesOrder=53817&sap-app-origin-hint=&sap-xapp-state=AS2MQ609Q876X758LQ2LPD0SCV79J0OSTNKQ7IPQ) and dynamically add the Sales Order number from our context into the URL.
+22. Additionally, we want to add an Action Button to navigate the user into the respective Sales Order. We are using the URL for changing sales orders (https://my426786.s4hana.cloud.sap/ui#SalesOrder-change?SalesOrder=<order-no>) and dynamically add the Sales Order number from our context into the URL.
 <br>![](/exercises/ex1/images/ex1.2-22.png)
 
 23. Finally, in the 'End' node we need to add the result object from our Skill Output.
