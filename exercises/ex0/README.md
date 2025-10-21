@@ -30,4 +30,4 @@ In this exercise, you will make yourself familiar the provided systems, landscap
 
 Now that you have made yourself familiar with the general setup and the architectural components for this Hands-on workshop, you can proceed with the first exercise.
 
-Continue to - [Exercise 1 - Create a skill to review and change custom fields in a sales order](exercises/ex1/README.md#exercise-1---create-a-skill-to-review-and-change-custom-fields-in-a-sales-order)
+Continue to - [Exercise 1 - Create a skill to review and change custom fields in a sales order](../ex1/README.md#exercise-1---create-a-skill-to-review-and-change-custom-fields-in-a-sales-order)

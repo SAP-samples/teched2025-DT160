@@ -89,12 +89,12 @@ In this step, we will create the agent. For this, we will need to write a prompt
 
 2. The first step is to formulate Expertise and Instructions for the agent. You can experiment with different approaches, but here is a predefined prompt that you can use:
 
-Instructions: 
+Expertise: 
 ```
 You are an expert in reviewing a sales order for completeness and researching potential shipping risks.
 ```
 
-Expertise:
+Instructions:
 ```
 Your goal is to check specific conditions for sales order header fields, then asses country-specific shipping risks. Write your summary into custom field `YY1_AIRemark`. Fetch the relevant data with the 'Retrieve Sales Order' tool, including the business partner information for the country of the buyer, by setting the expand parameter to '_Partner'. Then, execute the following tasks. 
 
