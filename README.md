@@ -2,13 +2,13 @@
 
 ## Description
 
-Get maximum value from the Joule copilot in SAP Cloud ERP by extending it with custom-built skills and intelligent agents that can plan, act, and execute tasks. Explore tools and techniques to make Joule smarter and faster while enhancing user productivity or automating complex workflows.
+Get maximum value from the Joule Copilot in SAP Cloud ERP by extending it with custom-built skills and intelligent agents that can plan, act, and execute tasks. Explore tools and techniques to make Joule smarter and faster while enhancing user productivity or automating complex workflows. Furthermore, get in an holistic understanding of the general architecture of unified Joule approach and extensibility scenarios.
 
 [Session in **SAP TechEd** session catalog](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1749134506762001tjmW)
 
 ## Overview
 
-This session introduces attendees to...
+This hands-on session you are through building AI-powered conversational skills as well as AI agents using Joule Studio. You'll learn how to create, configure, and deploy intelligent skills and agents that extend existing business processes, interact with backend systems and provide value to your users.
 
 ## Requirements
 
@@ -16,16 +16,19 @@ The requirements to follow the exercises in this repository are...
 
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
-
-- [Getting Started](exercises/ex0/)
-- [Exercise 1 - Create a skill to review and change custom fields in a sales order](exercises/ex1/README.md#exercise-1---create-a-skill-to-review-and-change-custom-fields-in-a-sales-order)
+- [Getting Started with Joule and Joule Studio in SAP Build](exercises/ex0/)
+- [Exercise 1 - Create a Joule Skill to review and change custom fields in a sales order](exercises/ex1/README.md#exercise-1---create-a-skill-to-review-and-change-custom-fields-in-a-sales-order)
     - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
     - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
+- [Exercise 2 - Create your first custom AI Agent in Joule Studio](/exercises/ex2/README.md)
     - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
-
+    - 
+### Appendix
+- [Exercise 3 - Envoirnment setup](/exercises/ex2/README.md)
+    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
+    - 
+    - 
 ## Flow
   
 **OR** Link to the Tutorial Navigator for example...

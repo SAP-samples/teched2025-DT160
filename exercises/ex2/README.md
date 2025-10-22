@@ -1,13 +1,13 @@
-# Exercise 2 - Exercise 2 Description
+# Exercise 2 - Create your first custom AI Agent in Joule Studio
 
-In this exercise, we will first adjust our skills that we created in exercise 1 in order to build a custom Sales Order Completeness Agent. On top of that, the agent should be able to research potential shipping risks by performing a web search with our Perplexiy API. We want to explicitly check for the following conditions in our sales order:
+In this exercise, we will first adjust our skills that has been created in the [previous exercise](/exercises/ex1/README.md)  in order to build a custom Sales Order Completeness Agent. On top of that, the agent should be able to research potential shipping risks by performing a web search with our Perplexiy API. We want to explicitly check for the following conditions in our sales order:
 - Best Run Status should be set to completed
 - IncotermLocation1 should not be empty
-- The pricing date should not be older tahn 14 days.
+- The pricing date should not be older than 14 days.
 
 In the end, the summary of our agent analyis will be saved into the custom field 'AI Remark' of the sales order.
 
-## Exercise 2.1 Modify the Skills and create a new one
+## Exercise 2.1 Modify the Joule Skills and create a new Joule Skills
 
 After completing these steps, we will have adjusted our skills from exercise 1 in a minimal way to make the data consumable for the agent. For example, instead of just using the custom field in the skill, we now want to have an agent that is able to analyze all of the header fields from a sales order. 
 

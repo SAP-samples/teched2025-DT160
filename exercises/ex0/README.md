@@ -13,9 +13,8 @@ In this exercise, you will make yourself familiar the provided systems, landscap
 
 # System Setup
 
-## Setup and Configuration on SAP Business Technology Platform
-
-![](/exercises/ex0/images/ex0-1.png)
+The system environment and subrcibtion to all relevant services and applications as well as the system connectivity and integration has been set up already.
+For details of the configuration and setup of Joule, Joule Studio in SAP Build as well as system connectivity, please refer to the optional [optional excersis in the appendid].
 
 # Reference Architecture for Joule Studio
 

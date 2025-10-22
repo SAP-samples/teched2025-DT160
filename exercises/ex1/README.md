@@ -1,6 +1,6 @@
-# Exercise 1 - Create a skill to review and change custom fields in a sales order
+# Exercise 1 - Create a Joule Skill to review and change custom fields in a sales order
 
-In this exercise, you will learn how to work with Joule Studio to create custom Joule skills for reviewing and editing custom fields in a S/4HANA sales order. To achieve this, we are creating an environment, and action project and finally a Joule skill inside of a project. 
+In this exercise, you will learn how to work with Joule Studio to create custom Joule skills for reviewing and editing custom fields in a SAP Cloud ERP sales order. To achieve this, we are creating an environment, and action project and finally a Joule skill inside of a project. 
 
 ## Exercise 1.1 Access the Build Lobby and create a new environment
 
