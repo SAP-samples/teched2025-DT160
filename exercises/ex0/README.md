@@ -1,20 +1,41 @@
-# Getting Started
+# Exercise 0: Getting Started
 
 In this exercise, you will make yourself familiar the provided systems, landscape setup and the solution architecture required for this Hands-on Workshop.
 
-## Landscape / System Access
+## Exercise 0.1: Logon and try out Joule
 
-### Joule Studio in SAP Build
+Open the SAP Cloud ERP System system by clickig the following link:
+[SAP Cloud ERP System](https://my426786.s4hana.cloud.sap/ui)
+
+Logon with your assigned group credentials. Replace `XXX` with your personal group number. 
+<br>![](/exercises/ex0/images/ex0.1-1.png)
+
+
+In SAP Cloud ERP open Joule by clicking the 💎-icon. 
+<br>![](/exercises/ex0/images/ex0.1-2.png)
+
+
+Enter a sample prompt like `show sales orders created Q1/2025` 
+
+//TODO// screenshot
+
+
+
+
+## Exercise 0.2 Joule Studio in SAP Build
+
+Logon to SAP Build by clicking the followinh URL
 
 [SAP Build Lobby - Joule Studio](https://dt160-map4x9xc.eu10.build.cloud.sap/lobby)
 
-### SAP Cloud ERP System
-[SAP Cloud ERP System](https://my426786.s4hana.cloud.sap/ui)
+
 
 # System Setup
 
 The system environment and subrcibtion to all relevant services and applications as well as the system connectivity and integration has been set up already.
-For details of the configuration and setup of Joule, Joule Studio in SAP Build as well as system connectivity, please refer to the optional [optional excersis in the appendid].
+For details of the configuration and setup of Joule, Joule Studio in SAP Build as well as system connectivity, please refer to the optional [optional excersis in the appendix] //TODO//.
+
+
 
 # Reference Architecture for Joule Studio
 
