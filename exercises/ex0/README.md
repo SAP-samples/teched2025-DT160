@@ -15,10 +15,18 @@ In SAP Cloud ERP open Joule by clicking the 💎-icon.
 <br>![](/exercises/ex0/images/ex0.1-2.png)
 
 
-Enter a sample prompt like `show sales orders created Q1/2025` 
+Enter a sample prompt like `show sales orders created in 2025`, Joule will provide a filtered list of sales orders. You can click one of them to navigate into the detail screen.  
+<br>![](/exercises/ex0/images/ex0.1-3.png)
 
-//TODO// screenshot
+Then get details of a sales order by asking `show details for SO 53817` and click `Open in App`. We've already prepared *custom extension fields* in context of the object Sales Document and added them to the screen.
+<br>![](/exercises/ex0/images/ex0.1-4.png)
 
+
+Those are standard, built-in skills of Joule. You can find a full list [help.sap.com/joule -> capabilities](https://help.sap.com/docs/joule/capabilities-guide/what-s-new-for-joule-capabilities?version=CLOUD). 
+
+
+While Joule is so far not aware of our extension fields "Best Run Status". In the next exercise we'll create a skill to retrieve the `best run status for a sales order`. 
+<br>![](/exercises/ex0/images/ex0.1-5.png)
 
 
 
