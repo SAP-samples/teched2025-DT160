@@ -190,5 +190,5 @@ Once the Skill has been created, we can release and deploy the project. Then, th
 
 You've now created two custom Joule Skills for reading and writing custom fields of a sales order. We will use parts of these skills in our second exercise where we will create a custom agent to do a completeness check on a sales order.
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Continue to - [Exercise 2 - Exercise 2 - Create a custom agent](../ex2/README.md)
 
