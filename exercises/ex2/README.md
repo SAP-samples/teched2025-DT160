@@ -1,13 +1,13 @@
 # Exercise 2 - Create your first custom AI Agent in Joule Studio
 
-In this exercise, we will first adjust our skills that has been created in the [previous exercise](/exercises/ex1/README.md)  in order to build a custom Sales Order Completeness Agent. On top of that, the agent should be able to research potential shipping risks by performing a web search with our Perplexiy API. We want to explicitly check for the following conditions in our sales order:
+In this exercise, we will first adjust our skills that have been created in the [previous exercise](/exercises/ex1/README.md) in order to build a custom Sales Order Completeness Agent. On top of that, the agent should be able to research potential shipping risks by performing a web search with our Perplexity API. We want to explicitly check for the following conditions in our sales order:
 - Best Run Status should be set to completed
 - IncotermLocation1 should not be empty
 - The pricing date should not be older than 14 days.
 
-In the end, the summary of our agent analyis will be saved into the custom field 'AI Remark' of the sales order.
+In the end, the summary of our agent analysis will be saved into the custom field 'AI Remark' of the sales order.
 
-## Exercise 2.1 Modify the Joule Skills and create a new Joule Skills
+## Exercise 2.1 Modify the Joule Skills and create a new Joule Skill
 
 After completing these steps, we will have adjusted our skills from exercise 1 in a minimal way to make the data consumable for the agent. For example, instead of just using the custom field in the skill, we now want to have an agent that is able to analyze all of the header fields from a sales order. 
 
@@ -47,13 +47,13 @@ After completing these steps, we will have adjusted our skills from exercise 1 i
 12. The next step is to create a new Skill for our Perplexity API. Go to the 'Overview' section of our project, click on 'Create' and then 'Create Joule Skill'.
 <br>![](/exercises/ex2/images/ex2.1-12.png)
 
-13. Write below description into the Skill.
+13. Write the below description into the Skill.
 <br>![](/exercises/ex2/images/ex2.1-13.png)
 
 14. Let's first change the Skill Input Parameter in the 'Trigger' tile. Click on 'Configure'.
 <br>![](/exercises/ex2/images/ex2.1-14.png)
 
-15. We call the input parameter 'query', because we want the agent to formulate the relevant search query from the context. Click on 'Apply' to go back the Trigger Parameters.
+15. We call the input parameter 'query', because we want the agent to formulate the relevant search query from the context. Click on 'Apply' to go back to the Trigger Parameters.
 <br>![](/exercises/ex2/images/ex2.1-15.png)
 
 16. In the Skill Outputs section, we define the response from the LLM as the output parameter. Click on 'Apply' to save the changes.
@@ -68,10 +68,10 @@ After completing these steps, we will have adjusted our skills from exercise 1 i
 19. Select the POST action with the name 'Create chat completion'.
 <br>![](/exercises/ex2/images/ex2.1-19.png)
 
-20. We need to create new environment variable, because we are now using a different destination. 
+20. We need to create a new environment variable, because we are now using a different destination. 
 <br>![](/exercises/ex2/images/ex2.1-20.png)
 
-21. Give the variable a descriptive name, we call it 'perplexity' and click on "Create'.
+21. Give the variable a descriptive name, we call it 'perplexity' and click on 'Create'.
 <br>![](/exercises/ex2/images/ex2.1-21.png)
 
 22. In the Action Input, we need to pass our query from the Skill Input to the messages of our API call. Navigate to the 'content' parameter and select the 'query' from the Skill Input.
@@ -82,7 +82,7 @@ After completing these steps, we will have adjusted our skills from exercise 1 i
 
 ## Exercise 2.2 Create the agent
 
-In this step, we will create the agent. For this, we will need to write a prompt, choose a LLM and select the right tools for the agent.
+In this step, we will create the agent. For this, we will need to write a prompt, choose an LLM and select the right tools for the agent.
 
 1. In the overview section of our project, click on 'Create' and then 'Create Agent'. Give the agent a name and a description as shown below.
 <br>![](/exercises/ex2/images/ex2.2-1.png)
@@ -96,7 +96,7 @@ You are an expert in reviewing a sales order for completeness and researching po
 
 Instructions:
 ```
-Your goal is to check specific conditions for sales order header fields, then asses country-specific shipping risks. Write your summary into custom field `YY1_AIRemark`. Fetch the relevant data with the 'Retrieve Sales Order' tool, including the business partner information for the country of the buyer, by setting the expand parameter to '_Partner'. Then, execute the following tasks. 
+Your goal is to check specific conditions for sales order header fields, then assess country-specific shipping risks. Write your summary into custom field `YY1_AIRemark`. Fetch the relevant data with the 'Retrieve Sales Order' tool, including the business partner information for the country of the buyer, by setting the expand parameter to '_Partner'. Then, execute the following tasks. 
 
 Task A – Completeness:
 - Best Run Status indicates closed/completed
@@ -126,22 +126,22 @@ Output:
 
 ## Exercise 2.3 Deploy and test the Agent
 
-In this step, we will release and deploy the agent into our user-specific environment. There, will be first testing the agent in the standalone joule instance before showing the results in our S/4HANA system.
+In this step, we will release and deploy the agent into our user-specific environment. There, we will be first testing the agent in the standalone Joule instance before showing the results in our S/4HANA system.
 
 1. Click on the 'Release' button on the top right of the screen.
-<br>![](/exercises/ex2/images/ex2.2-1.png)
+<br>![](/exercises/ex2/images/ex2.3-1.png)
 
 2. Click on 'Release'. 
-<br>![](/exercises/ex2/images/ex2.2-2.png)
+<br>![](/exercises/ex2/images/ex2.3-2.png)
 
 3. Make sure that you are in the released version of your project (next to the project name on the top of the screen) and click on the 'Deploy' button on the top right of the screen.
-<br>![](/exercises/ex2/images/ex2.2-3_neu.png)
+<br>![](/exercises/ex2/images/ex2.3-3.png)
 
-4. Deploy the project into the user specific environment and click on 'Upgrade'.
-<br>![](/exercises/ex2/images/ex2.2-4.png)
+4. Deploy the project into the user-specific environment and click on 'Upgrade'.
+<br>![](/exercises/ex2/images/ex2.3-4.png)
 
 5. Select the destinations as shown in the screenshot below and click on 'Deploy'.
-<br>![](/exercises/ex2/images/ex2.2-5.png)
+<br>![](/exercises/ex2/images/ex2.3-5.png)
 
 6. Open the Build Lobby again and go to the 'Control Tower' to open the 'Environments'.
 <br>![](/exercises/ex2/images/ex2.3-6.png)
@@ -156,4 +156,4 @@ In this step, we will release and deploy the agent into our user-specific enviro
 
 You've now modified the already existing skills and created a new one for the Perplexity integration. In exercise 2, you created a new agent by formulating instructions and adding tools. Finally, the project was released and tested by the user.
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+Continue to - [Cleanup instructions](../cleanup/README.md)

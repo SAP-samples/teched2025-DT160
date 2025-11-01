@@ -17,18 +17,17 @@ The requirements to follow the exercises in this repository are...
 ## Exercises
 
 - [Getting Started with Joule and Joule Studio in SAP Build](exercises/ex0/)
-- [Exercise 1 - Create a Joule Skill to review and change custom fields in a sales order](exercises/ex1/README.md#exercise-1---create-a-skill-to-review-and-change-custom-fields-in-a-sales-order)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Create your first custom AI Agent in Joule Studio](/exercises/ex2/README.md)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
-    - 
-### Appendix
-- [Exercise 3 - Envoirnment setup](/exercises/ex2/README.md)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - 
-    - 
+    - [Exercise 0.1 - Logon and try out Joule](exercises/ex0/README.md#exercise-01-logon-and-try-out-joule)
+    - [Exercise 0.2 - Joule Studio in SAP Build](exercises/ex0/README.md#exercise-02-joule-studio-in-sap-build)
+- [Exercise 1 - Create a Joule Skill to review and change custom fields in a sales order](exercises/ex1/README.md)
+    - [Exercise 1.1 - Access the Build Lobby and create a new environment](exercises/ex1/README.md#exercise-11-access-the-build-lobby-and-create-a-new-environment)
+    - [Exercise 1.2 - Create the custom Joule Skills](exercises/ex1/README.md#exercise-12-create-the-custom-joule-skills)
+    - [Exercise 1.3 - Deploy the custom Skill and test it](exercises/ex1/README.md#exercise-13-deploy-the-custom-skill-and-test-it)
+- [Exercise 2 - Create your first custom AI Agent in Joule Studio](exercises/ex2/README.md)
+    - [Exercise 2.1 - Modify the Joule Skills and create a new Joule Skills](exercises/ex2/README.md#exercise-21-modify-the-joule-skills-and-create-a-new-joule-skills)
+    - [Exercise 2.2 - Create the agent](exercises/ex2/README.md#exercise-22-create-the-agent)
+    - [Exercise 2.3 - Deploy and test the Agent](exercises/ex2/README.md#exercise-23-deploy-and-test-the-agent)
+- [Cleanup instructions](exercises/cleanup/README.md)
 ## Flow
   
 **OR** Link to the Tutorial Navigator for example...
