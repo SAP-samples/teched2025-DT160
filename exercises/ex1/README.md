@@ -1,6 +1,6 @@
 # Exercise 1 - Create a Joule Skill to review and change custom fields in a sales order
 
-In this exercise, you will learn how to work with Joule Studio to create custom Joule skills for reviewing and editing custom fields in a SAP Cloud ERP sales order. To achieve this, we are creating an environment, and action project and finally a Joule skill inside of a project. 
+In this exercise, you will learn how to work with Joule Studio to create custom Joule skills for reviewing and editing custom fields in a SAP Cloud ERP sales order. To achieve this, we are creating an environment, an action project and finally a Joule skill inside of a project.
 
 ## Exercise 1.1 Access the Build Lobby and create a new environment
 
@@ -41,7 +41,7 @@ After completing these steps, you have created two custom Joule Skills for retri
 5. Now you created your project. Let's click again on 'Create' to either create a new Joule Skill or a Joule Agent. We will first start with a skill.
 <br>![](/exercises/ex1/images/ex1.2.-5.png)
 
-6. Give the skill a descriptive name and write a clear and concise description. This description is used by Joule during runtime to find the right skill. In our exercise, it is important that we are not interfering with the standard sales order skills, which is why make clear that we want to access the custom fields of the sales order.
+6. Give the skill a descriptive name and write a clear and concise description. This description is used by Joule during runtime to find the right skill. In our exercise, it is important that we are not interfering with the standard sales order skills, which is why we make clear that we want to access the custom fields of the sales order.
 <br>![](/exercises/ex1/images/ex1.2-6.png)
 
 7. In the Joule Skill, we can adjust the trigger of how the scenario is called. But first, we want to create our action. This can be done by clicking on the plus button.
@@ -56,25 +56,25 @@ After completing these steps, you have created two custom Joule Skills for retri
 10. After selecting the action, we need to define a destination variable. Click on 'Create Destination Variable' on the right side of the screen.
 <br>![](/exercises/ex1/images/ex1.2-10.png)
 
-11. Give the destination variable an identifier (here: 's4) and click on 'Create'.
+11. Give the destination variable an identifier (here: 's4') and click on 'Create'.
 <br>![](/exercises/ex1/images/ex1.2-11.png)
 
 12. Now, we will work on the trigger. Click on the respective box and then choose the column 'Parameters' on the right side. We will first configure our Skill inputs.
 <br>![](/exercises/ex1/images/ex1.2-12.png)
 
-13. In our exercise, we want to pass a Sales Order Number to Joule in order to receive the custom fields. Thats why are defining this input as in our screenshot and click on 'Apply' to continue.
+13. In our exercise, we want to pass a Sales Order Number to Joule in order to receive the custom fields. That's why we are defining this input as in our screenshot and click on 'Apply' to continue.
 <br>![](/exercises/ex1/images/ex1.2-13.png)
 
 14. Next we are defining the Skill Outputs by clicking 'Configure' on the respective section.
 <br>![](/exercises/ex1/images/ex1.2-14.png)
 
-15. The result set from out action will be our Skill Output. For the type, we want to use the specific output schema of the action instead of some arbitrary data type. Scroll down and select the respective schema of the action. 
+15. The result set from our action will be our Skill Output. For the type, we want to use the specific output schema of the action instead of some arbitrary data type. Scroll down and select the respective schema of the action. 
 <br>![](/exercises/ex1/images/ex1.2-15.png)
 
 16. Click on 'Apply' to continue.
 <br>![](/exercises/ex1/images/ex1.2-16.png)
 
-17. In this step, we want to use our Skill Input as a parameter for our action. Click on action box and then on the 'Inputs' section. The Sales Order Number from our Skill Input should be added to the 'SalesOrder' parameter (Step 3 & 4).
+17. In this step, we want to use our Skill Input as a parameter for our action. Click on the action box and then on the 'Inputs' section. The Sales Order Number from our Skill Input should be added to the 'SalesOrder' parameter (Step 3 & 4).
 <br>![](/exercises/ex1/images/ex1.2-17.png)
 
 18. As the final step, we want to configure a custom message to the end users. Click on the plus button to add an additional step and select 'Send Response'.
@@ -119,13 +119,13 @@ After completing these steps, you have created two custom Joule Skills for retri
 31. In addition to the Sales Order number, we will also have the name of our custom field as part of our input. This time, we don't need to define a Skill Output.
 <br>![](/exercises/ex1/images/ex1.2-31.png)
 
-32. Go the Action Input and add the Sales Order Number into the respective API parameter ('SalesOrder'). 
+32. Go to the Action Input and add the Sales Order Number into the respective API parameter ('SalesOrder'). 
 <br>![](/exercises/ex1/images/ex1.2-32.png)
 
 33. Do the same for our custom field.
 <br>![](/exercises/ex1/images/ex1.2-33.png)
 
-34. Add a new step by clicking on the pluss button and choose 'Send Message' as in the the first Skill.
+34. Add a new step by clicking on the plus button and choose 'Send Message' as in the first Skill.
 <br>![](/exercises/ex1/images/ex1.2-34.png)
 
 35. Open the Message Editor.
@@ -144,16 +144,16 @@ Once the Skill has been created, we can release and deploy the project. Then, th
 2. Click on 'Release' again. This will save a 'Snapshot' of our project before the deployment.
 <br>![](/exercises/ex1/images/ex1.3-2.png)
 
-3. Go to the released version of our project by selecting in the drop down on the top of the screen.
+3. Go to the released version of our project by selecting it in the drop down on the top of the screen.
 <br>![](/exercises/ex1/images/ex1.3-3.png)
 
-4. Choose your user-specific enviromment and deploy the project into this. 
+4. Choose your user-specific environment and deploy the project into this. 
 <br>![](/exercises/ex1/images/ex1.3-4.png)
 
 5. Select the shown destination (for dry run choose 'S4_SalesOrder_v4') and click on 'Deploy'.
 <br>![](/exercises/ex1/images/ex1.3-5.png)
 
-6. Go back to the Build Lobby, access the Control Tower and go the 'Environments'.
+6. Go back to the Build Lobby, access the Control Tower and go to the 'Environments'.
 <br>![](/exercises/ex1/images/ex1.3-6.png)
 
 7. Access your user-specific environment.
@@ -165,7 +165,7 @@ Once the Skill has been created, we can release and deploy the project. Then, th
 9. Now you are accessing a standalone version of Joule. Type in a similar user prompt as in the screenshot and submit your message. 
 <br>![](/exercises/ex1/images/ex1.3-9.png)
 
-10. If we want to test the second Skill, we don't even need to define the sales order number again since is able to retrieve this from the message history.
+10. If we want to test the second Skill, we don't even need to define the sales order number again since Joule is able to retrieve this from the message history.
 <br>![](/exercises/ex1/images/ex1.3-10.png)
 
 11. The skills are working as expected.
@@ -174,14 +174,14 @@ Once the Skill has been created, we can release and deploy the project. Then, th
 12. Go back to your environment and click on the 'Share' button.
 <br>![](/exercises/ex1/images/ex1.3-14.png)
 
-13. Before sharing the Skill with our S4 Joule instance, we want to make sure that only our user has access to the Skill in order not interfere with the skills of the other participants. Click on 'Cancel' to go back to your environment.
+13. Before sharing the Skill with our S4 Joule instance, we want to make sure that only our user has access to the Skill in order not to interfere with the skills of the other participants. Click on 'Cancel' to go back to your environment.
 <br>![](/exercises/ex1/images/ex1.3-15.png)
 
 14. Now click on the settings button on the right side.
 <br>![](/exercises/ex1/images/ex1.3-12.png)
 
 15. Turn on 'Share Environment Capabilities' to deploy the Skill into our S/4HANA Joule instance.
-<br>![](/exercises/ex1/images/ex1.3-5.png)
+<br>![](/exercises/ex1/images/ex1.3-13.png)
 
 16. Go to the S/4HANA system, open the Joule chat window by clicking on the Joule icon on the top of the screen and start testing your skills.
 <br>![](/exercises/ex1/images/ex1.3-16_neu.png)
@@ -190,5 +190,4 @@ Once the Skill has been created, we can release and deploy the project. Then, th
 
 You've now created two custom Joule Skills for reading and writing custom fields of a sales order. We will use parts of these skills in our second exercise where we will create a custom agent to do a completeness check on a sales order.
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
-
+Continue to - [Exercise 2 - Create your first custom AI Agent in Joule Studio](../ex2/README.md)
