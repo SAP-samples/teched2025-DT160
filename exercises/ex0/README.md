@@ -4,6 +4,20 @@ In this exercise, you will make yourself familiar with the provided systems, lan
 
 ## Exercise 0.1: Logon and try out Joule
 
+### Joule Standalone Webclient
+
+When setting up and subscribing Joule in a SAP Business Technology Platform subaccount, you can test the Joule client by opening the Joule standalone Webclient. Open the Joule standalone Webclient for our session by clicking following link:
+[Joule Standalone Webclient](https://dt160-map4x9xc.eu10.sapdas.cloud.sap/webclient/standalone/sap_digital_assistant)
+
+Logon with your assigned group credentials. Replace `0XX` with your personal group number provided by your instructor.
+<br>![alt text](/exercises/ex0/images/ex0-4.png)
+
+After successful logon, you can start interacting with Joule 💎 - The AI copilot, infused with agents, that amplifies employees’ expertise and impact.
+ 
+<br>![alt text](/exercises/ex0/images/ex0-3.png)
+
+### SAP Cloud ERP System
+
 Open the SAP Cloud ERP System system by clicking the following link:
 [SAP Cloud ERP System](https://my426786.s4hana.cloud.sap/ui)
 
@@ -46,8 +60,6 @@ For details of the configuration and setup of Joule, Joule Studio in SAP Build a
 
 
 # Reference Architecture for Joule Studio
-
-## Reference Architecture for extending Joule for SAP Cloud ERP
 
 ## General Reference Architecture for Joule Studio on SAP Architecture Center
 
