@@ -1,3 +1,12 @@
+> [!IMPORTANT]
+> **Welcome to the Agent Builder Lab Preview!**
+>
+> You are working with a **pre-release version** of the Agent Builder in Joule Studio. This gives you an early look at our upcoming capabilities. Please keep the following in mind:
+>
+> *   **Features Are Subject to Change:** The user interface (UI), terminology, and functionalities you see in this lab may differ from the final, generally available (GA) product.
+> *   **For Educational Use Only:** This environment is designed for learning and experimentation, not for production use.
+> *   **Potential Instability:** As a preview version, you may encounter occasional instability or minor bugs. The exercises are designed to work with the current state of the platform. If you get stuck, please notify a session instructor.
+
 # DT160 - Extend Joule with custom skills and custom agents for SAP Cloud ERP
 
 ## Description
