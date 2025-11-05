@@ -89,7 +89,7 @@ After completing these steps, you have created two custom Joule Skills for retri
 21. In the message editor, you can configure any kind of predefined message structure. Here, we are defining an illustrated message and add the Sales Order Number into the title by accessing the context of the Skill with the '<>' button.
 <br>![](/exercises/ex1/images/ex1.2-21.png)
 
-22. Additionally, we want to add an Action Button to navigate the user into the respective Sales Order. We are using the URL for changing sales orders (https://my426786.s4hana.cloud.sap/ui#SalesOrder-change?SalesOrder=<order-no>) and dynamically add the Sales Order number from our context into the URL.
+22. Additionally, we want to add an Action Button to navigate the user into the respective Sales Order. We are using the URL for changing sales orders (`https://my426786.s4hana.cloud.sap/ui#SalesOrder-displayFactSheet&/C_Salesorderfs('<order num>')`) and replace `<order num>` by selecting the Sales Order field from context selection.
 <br>![](/exercises/ex1/images/ex1.2-22.png)
 
 23. Finally, in the 'End' node we need to add the result object from our Skill Output.
@@ -150,7 +150,7 @@ Once the Skill has been created, we can release and deploy the project. Then, th
 4. Choose your user-specific environment and deploy the project into this. 
 <br>![](/exercises/ex1/images/ex1.3-4.png)
 
-5. Select the shown destination (for dry run choose 'S4_SalesOrder_v4') and click on 'Deploy'.
+5. Select the shown destination (for dry run choose `S4_SalesOrder_v4`) and click on 'Deploy'.
 <br>![](/exercises/ex1/images/ex1.3-5.png)
 
 6. Go back to the Build Lobby, access the Control Tower and go to the 'Environments'.
