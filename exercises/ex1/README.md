@@ -2,6 +2,21 @@
 
 In this exercise, you will learn how to work with Joule Studio to create custom Joule skills for reviewing and editing custom fields in a SAP Cloud ERP sales order. To achieve this, we are creating an environment, an action project and finally a Joule skill inside of a project.
 
+##: 💡 Understanding Joule Skills
+
+**Joule Skills** are modular components within SAP’s conversational AI framework, designed to execute **atomic, predefined operations** within a business context.Each skill performs a single task — such as retrieving data, triggering transactions, or querying systems — based on structured inputs and deterministic logic. Their purpose is to streamline repetitive, rule-based activities by providing a **fast, reliable, and reusable automation mechanism**.
+
+Functioning within clearly defined parameters, Joule Skills are ideal for **low-complexity, high-frequency operations** where consistency and precision are critical.  
+They are tightly integrated with **SAP and third-party APIs** via **SAP Build Actions**, enabling seamless execution of system-level commands.  
+While they can understand conversation context, their logic is **non-adaptive** — flows are static, and outcomes are predictable.
+
+> 💡 **Note:** Joule Skills can be triggered:
+> 
+>    - through SAP Joule’s conversational interface
+>    - through another Joule Skills
+>    - through Joule Agent
+
+
 ## Exercise 1.1 Access the Build Lobby and create a new environment
 
 After completing these steps you will have created an environment to isolate the skill development process for your specific user.
