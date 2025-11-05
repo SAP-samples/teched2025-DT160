@@ -24,7 +24,7 @@ After completing these steps you will have created an environment to isolate the
 
 ## Exercise 1.2 Create the custom Joule Skills
 
-After completing these steps, you have created two custom Joule Skills for retrieving and writing custom fields of a S/4HANA Sales Order.
+After completing these steps, you have created two custom Joule Skills for retrieving and writing custom fields of a SAP S/4HANA Sales Order.
 
 1. Click on the 'Create' button and then on 'Joule Skill'.
 <br>![](/exercises/ex1/images/ex1.2.-1.png)
