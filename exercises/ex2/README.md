@@ -7,6 +7,20 @@ In this exercise, we will first adjust our skills that have been created in the 
 
 In the end, the summary of our agent analysis will be saved into the custom field 'AI Remark' of the sales order.
 
+## 💡 Understanding Joule Agents
+
+**Joule Agents** represent the next evolution of enterprise automation — intelligent, autonomous systems that **plan, reason, and act** across multiple tools and systems to achieve complex goals.  
+While **Joule Skills** execute predefined, deterministic operations, Joule Agents handle **multi-step, adaptive workflows**, deciding *what to do, when, and how* based on business context and user intent.
+
+Functioning as orchestration layers, Joule Agents combine analytical reasoning with real-time decision-making. They use **Large Language Models (LLMs)** to interpret user requests, dynamically select relevant tools (including Joule Skills), and generate contextual responses — enabling **goal-oriented, conversational automation**.
+
+Each Joule Agent is built around four key cognitive abilities:
+
+1. **Planning** – The agent determines the best sequence of actions to achieve a business goal, orchestrating multiple tools or Joule Skills as needed.  
+2. **Reflection** – The agent evaluates its own steps, identifies errors or missing data, and self-corrects to reach the desired outcome.  
+3. **Tool Usage** – The agent dynamically invokes SAP Build Actions, Joule Skills, or other APIs to perform operations, retrieve data, or trigger systems.  
+4. **Collaboration** – Agents can cooperate with other agents or human users, engaging in dialogue, confirmation, or validation when business logic requires oversight.
+
 ## Exercise 2.1 Modify the Joule Skills and create a new Joule Skill
 
 After completing these steps, we will have adjusted our skills from exercise 1 in a minimal way to make the data consumable for the agent. For example, instead of just using the custom field in the skill, we now want to have an agent that is able to analyze all of the header fields from a sales order. 
