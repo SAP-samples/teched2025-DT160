@@ -10,7 +10,8 @@ When setting up and subscribing Joule in a SAP Business Technology Platform suba
 [Joule Standalone Webclient](https://dt160-map4x9xc.eu10.sapdas.cloud.sap/webclient/standalone/sap_digital_assistant)
 
 Logon with your assigned group credentials. Replace `0XX` with your personal group number provided by your instructor.
-<br>![alt text](/exercises/ex0/images/ex0-4.png)
+
+<img src="/exercises/ex0/images/ex0-4.png" alt="alt" width="50"/>
 
 After successful logon, you can start interacting with Joule 💎 - The AI copilot, infused with agents, that amplifies employees’ expertise and impact.
  
