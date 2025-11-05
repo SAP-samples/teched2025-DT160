@@ -11,7 +11,7 @@ When setting up and subscribing Joule in a SAP Business Technology Platform suba
 
 Logon with your assigned group credentials. Replace `0XX` with your personal group number provided by your instructor.
 
-<img src="/exercises/ex0/images/ex0-4.png" alt="alt" width="50"/>
+<img src="/exercises/ex0/images/ex0-4.png" alt="alt" width="250"/>
 
 After successful logon, you can start interacting with Joule 💎 - The AI copilot, infused with agents, that amplifies employees’ expertise and impact.
  
