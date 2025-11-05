@@ -166,6 +166,15 @@ In this step, we will release and deploy the agent into our user-specific enviro
 8. Go to the 'Joule' section of the environment and open Joule Standalone by clicking on 'Launch'.
 <br>![](/exercises/ex2/images/ex2.3-8.png)
 
+9. Type in the below prompt and replace XXXXX with your specific Sales Order Number. To review the logs, click on the icon on the top right, right next to your user credentials.
+```
+Review Sales Order XXXXX
+```
+<br>![](/exercises/ex2/images/ex2.4-1.png)
+
+11. Here you can review the logs of your agent execution.
+<br>![](/exercises/ex2/images/ex2.4-2.png)
+
 ## Summary
 
 You've now modified the already existing skills and created a new one for the Perplexity integration. In exercise 2, you created a new agent by formulating instructions and adding tools. Finally, the project was released and tested by the user.
