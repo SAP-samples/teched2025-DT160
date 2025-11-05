@@ -21,7 +21,16 @@ This hands-on session you are through building AI-powered conversational skills 
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+## Requirements & Prerequisites - already in place
+
+All required backend systems and configurations have been pre-provisioned for this session. This includes:
+
+1.  **Joule Studio in SAP Build**:
+    - Agent Builder is enabled and accessible.
+
+2.  **Actions & Destinations**:
+    - SAP Build Action projects (`Sales Order (A2X) - v4`) are pre-built to access the SAP Cloud ERP System.
+    - BTP Destinations (`S4_SalesOrder_V4` & `Perplexity_API`) are available in SAP Build.
 
 ## Exercises
 
@@ -37,11 +46,6 @@ The requirements to follow the exercises in this repository are...
     - [Exercise 2.2 - Create the agent](exercises/ex2/README.md#exercise-22-create-the-agent)
     - [Exercise 2.3 - Deploy and test the Agent](exercises/ex2/README.md#exercise-23-deploy-and-test-the-agent)
 - [Cleanup instructions](exercises/cleanup/README.md)
-## Flow
-  
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
 
 **IMPORTANT**
 

@@ -55,8 +55,7 @@ Logon to SAP Build by clicking the following URL
 # System Setup
 
 The system environment and subscription to all relevant services and applications as well as the system connectivity and integration has been set up already.
-For details of the configuration and setup of Joule, Joule Studio in SAP Build as well as system connectivity, please refer to the optional [optional exercises in the appendix] //TODO//.
-
+For details of the configuration and setup of Joule, Joule Studio in SAP Build as well as system connectivity, please refer to the optional [optional exercises in the appendix]
 
 
 # Reference Architecture for Joule Studio
