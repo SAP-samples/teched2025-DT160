@@ -165,9 +165,9 @@ After completing these steps, you have created two custom Joule Skills for retri
 36. Let's define a simple confirmation for the end user that the custom field has been written with a new value. Click on 'Save' to finalize the creation of the second custom Skill.
 <br>![](/exercises/ex1/images/ex1.2-36.png)
 
-## Exercise 1.3 Deploy the custom Skill and test it 
+## Exercise 1.3 Deploy the custom Skill and test it
 
-Once the Skill has been created, we can release and deploy the project. Then, the user will be able to first test the Skills in an isolated environment and afterwards share this environment with our S/4HANA system to experience the custom skill there.
+Once the Skill has been created, we can release and deploy the project. Then, the user will be able to first test the Skills in an isolated environment and afterwards share this environment with our SAP /4HANA system to experience the custom skill there.
 
 1. In the 'Overview' section of the project, click on 'Release' on the top right of the screen.
 <br>![](/exercises/ex1/images/ex1.3-1.png)
@@ -205,13 +205,34 @@ Once the Skill has been created, we can release and deploy the project. Then, th
 12. Go back to your environment and click on the 'Share' button.
 <br>![](/exercises/ex1/images/ex1.3-14.png)
 
-13. Before sharing the Skill with our S4 Joule instance, we want to make sure that only our user has access to the Skill in order not to interfere with the skills of the other participants. Click on 'Cancel' to go back to your environment.
+13. Before sharing the Skill with our unified Joule instance, we want to make sure that only our user has access to the Skill in order not to interfere with the skills of the other participants. Click on 'Cancel' to go back to your environment.
+
+### ⚙️ Context and Purpose
+
+You have tested your Joule Skills and Agents in your **Private Environment**
+
+Now, it’s time to **release and deploy** your project to a **Shared Environment** — enabling collaboration, integration testing, and visibility for other users in the same tenant.
+
+This step finalizes your work, ensuring that your Joule Agent is packaged, deployed, and functioning within the broader environment context.
+
+---
+
+### 🌍 Why This Matters
+Releasing and deploying your project to a **Shared Environment** allows:
+- Validation of the agent in a **multi-user** and **multi-system** setup.  
+- Connection with shared **destinations** and external APIs.  
+- End-to-end simulation of **Agentic Warehouse Operations** at scale.  
+
+> 💡 **Good to Know:**  
+> When your organization has Joule available in a **shared environment**, this same deployment flow will also apply when moving the project to **Joule in Production**.  
+> The deployment process — including version release, environment selection, and destination mapping — follows the **same steps** as described below.
+
 <br>![](/exercises/ex1/images/ex1.3-15.png)
 
 14. Now click on the settings button on the right side.
 <br>![](/exercises/ex1/images/ex1.3-12.png)
 
-15. Turn on 'Share Environment Capabilities' to deploy the Skill into our S/4HANA Joule instance.
+15. Turn on 'Share Environment Capabilities' to deploy the Skill into our SAP S/4HANA Joule instance.
 <br>![](/exercises/ex1/images/ex1.3-13.png)
 
 16. Go to the S/4HANA system, open the Joule chat window by clicking on the Joule icon on the top of the screen and start testing your skills.
