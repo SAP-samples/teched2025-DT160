@@ -19,6 +19,22 @@ While they can understand conversation context, their logic is **non-adaptive** 
 
 ## Exercise 1.1 Access the Build Lobby and create a new environment
 
+## ⚙️ Understanding the Private Environment Concept
+
+**Joule Studio** now offers a dedicated **Private Environment** designed to provide a safe, isolated space for experimenting with **Joule Agents**.  
+It allows developers and business users to build, test, and refine their configurations **without affecting any shared or productive environments**.
+
+Within the Private Environment, you can:
+- Safely experiment with new agent logic, skills, and actions.  
+- Test agent conversations and workflows **during design time (before deployment)**.  
+- Identify and fix configuration or integration issues early, ensuring a smoother rollout to production.  
+
+In other words, the Private Environment acts as a **sandbox** where you can freely iterate on your Joule Skills and Agents.
+
+> 💡 **Good to know:**  
+> Each user has their own Private Environment, meaning that tests and changes performed here do not interfere with other users or productive Joule instances.  
+> You can reset or reconfigure it anytime without impacting organizational data.
+
 After completing these steps you will have created an environment to isolate the skill development process for your specific user.
 
 1. Click on the 'Control Tower'.
