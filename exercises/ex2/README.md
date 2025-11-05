@@ -40,7 +40,7 @@ After completing these steps, we will have adjusted our skills from exercise 1 i
 5. Close the action details and delete the 'Send Message' tile as we want to provide all the sales order information to the agent instead of only selected header fields.
 <br>![](/exercises/ex2/images/ex2.1-5.png)
 
-6. Turn off the Joule-generated response to return all the fields from the API call.
+6. Turn on the Joule-generated response.
 <br>![](/exercises/ex2/images/ex2.1-6.png)
 
 7. Open the 'Write Custom Field' skill. This time we want to write into our other custom sales order field. Open the trigger, go to 'Parameters' and click on 'Configure'.
