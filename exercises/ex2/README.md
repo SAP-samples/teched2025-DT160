@@ -31,7 +31,7 @@ After completing these steps, we will have adjusted our skills from exercise 1 i
 2. For our agentic use case, we need to add an additional input to our skill.
 <br>![](/exercises/ex2/images/ex2.1-2.png)
 
-3. The agent needs to be able to read the country of the business partner from the sales order. For that, we need to add the expand parameter as a Skill Input. 
+3. The agent needs to be able to read the country of the business partner from the sales order. For that, we need to add the expand parameter as a Skill Input. It is not need to set this input to required. 
 <br>![](/exercises/ex2/images/ex2.1-3_neu.png)
 
 4. Now we need to again put the expand into the relevant input parameter of our action.
