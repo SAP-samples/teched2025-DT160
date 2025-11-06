@@ -168,7 +168,7 @@ In this step, we will release and deploy the agent into our user-specific enviro
 
 9. Type in the below prompt and replace 87XXX with your specific Sales Order Number (*like Sales Order 87001*). To review the logs, click on the icon on the top right, right next to your user credentials.
 ```
-Review Sales Order XXXXX
+Review Sales Order 87XXX
 ```
 <br>![](/exercises/ex2/images/ex2.4-1.png)
 
@@ -177,6 +177,7 @@ Review Sales Order XXXXX
 
 ## Summary
 
+Congratulations! 
 You've now modified the already existing skills and created a new one for the Perplexity integration. In exercise 2, you created a new agent by formulating instructions and adding tools. Finally, the project was released and tested by the user.
 
 Continue to - [Cleanup instructions](../cleanup/README.md)
