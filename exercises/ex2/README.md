@@ -155,7 +155,7 @@ In this step, we will release and deploy the agent into our user-specific enviro
 <br>![](/exercises/ex2/images/ex2.3-4.png)
 
 5. Select the destinations as shown in the screenshot below and click on 'Deploy'.
-<br>![](/exercises/ex2/images/ex2.3-5.png)
+<br>![](/exercises/ex2/images/ex2.3-5_new.png)
 
 6. Open the Build Lobby again and go to the 'Control Tower' to open the 'Environments'.
 <br>![](/exercises/ex2/images/ex2.3-6.png)
