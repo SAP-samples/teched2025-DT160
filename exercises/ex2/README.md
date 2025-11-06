@@ -87,6 +87,7 @@ After completing these steps, we will have adjusted our skills from exercise 1 i
 
 21. Give the variable a descriptive name, we call it 'perplexity' and click on 'Create'.
 <br>![](/exercises/ex2/images/ex2.1-21.png)
+*Please check as well that you also have selected the respective destination variable*
 
 22. In the Action Input, we need to pass our query from the Skill Input to the messages of our API call. Navigate to the 'content' parameter and select the 'query' from the Skill Input.
 <br>![](/exercises/ex2/images/ex2.1-22.png)
