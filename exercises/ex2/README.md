@@ -160,13 +160,13 @@ In this step, we will release and deploy the agent into our user-specific enviro
 6. Open the Build Lobby again and go to the 'Control Tower' to open the 'Environments'.
 <br>![](/exercises/ex2/images/ex2.3-6.png)
 
-7. Open the user-specific environment.
+7. Open the your user-specific environment.
 <br>![](/exercises/ex2/images/ex2.3-7.png)
 
 8. Go to the 'Joule' section of the environment and open Joule Standalone by clicking on 'Launch'.
 <br>![](/exercises/ex2/images/ex2.3-8.png)
 
-9. Type in the below prompt and replace XXXXX with your specific Sales Order Number. To review the logs, click on the icon on the top right, right next to your user credentials.
+9. Type in the below prompt and replace 87XXX with your specific Sales Order Number (*like Sales Order 87001*). To review the logs, click on the icon on the top right, right next to your user credentials.
 ```
 Review Sales Order XXXXX
 ```

@@ -221,7 +221,6 @@ This step finalizes your work, ensuring that your Joule Agent is packaged, deplo
 Releasing and deploying your project to a **Shared Environment** allows:
 - Validation of the agent in a **multi-user** and **multi-system** setup.  
 - Connection with shared **destinations** and external APIs.  
-- End-to-end simulation of **Agentic Warehouse Operations** at scale.  
 
 > 💡 **Good to Know:**  
 > When your organization has Joule available in a **shared environment**, this same deployment flow will also apply when moving the project to **Joule in Production**.  
@@ -235,11 +234,11 @@ Releasing and deploying your project to a **Shared Environment** allows:
 15. Turn on 'Share Environment Capabilities' to deploy the Skill into our SAP S/4HANA Joule instance.
 <br>![](/exercises/ex1/images/ex1.3-13.png)
 
-16. Go to the S/4HANA system, open the Joule chat window by clicking on the Joule icon on the top of the screen and start testing your skills.
+16. Go to the SAP S/4HANA system, open the Joule chat client window by clicking on the Joule icon on the top of the screen and start testing your skills.
 <br>![](/exercises/ex1/images/ex1.3-16_neu.png)
 
 ## Summary
 
-You've now created two custom Joule Skills for reading and writing custom fields of a sales order. We will use parts of these skills in our second exercise where we will create a custom agent to do a completeness check on a sales order.
+You've now created two custom Joule Skills for reading and writing custom fields of a sales order in your SAP S/4HANA system. We will use parts of these skills in our second exercise where we will create a custom agent to do a completeness check on a sales order.
 
 Continue to - [Exercise 2 - Create your first custom AI Agent in Joule Studio](../ex2/README.md)
