@@ -196,7 +196,7 @@ Once the Skill has been created, we can release and deploy the project. Then, th
 9. Now you are accessing a standalone version of Joule. Type in a similar user prompt as in the screenshot and submit your message. 
 <br>![](/exercises/ex1/images/ex1.3-9.png)
 
-10. If we want to test the second Skill, we don't even need to define the sales order number again since Joule is able to retrieve this from the message history.
+10. If we want to test the second Skill, we don't even need to define the sales order number again since Joule is able to retrieve this from the message history. Example prompt 'retrieve custom field for sales order' 
 <br>![](/exercises/ex1/images/ex1.3-10.png)
 
 11. The skills are working as expected.
